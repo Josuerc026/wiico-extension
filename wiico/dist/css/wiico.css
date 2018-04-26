@@ -157,19 +157,3 @@ body:after {
     display: block;
     text-align: center;
 }
-
-00;
-}
-
-.movie-title {
-    font-style: italic;
-}
-
-.tmdb-att {
-    color: #fff;
-    font-size: 10px;
-    position: relative;
-    top: 10px;
-    display: block;
-    text-align: center;
-}

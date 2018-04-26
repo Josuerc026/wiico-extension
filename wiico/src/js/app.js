@@ -45,7 +45,7 @@
           }
           return timeTo;
       }
-      fetch('https://api.themoviedb.org/3/search/movie?api_key=4650b6df4cd0d7388c64bd5a0823a95d&query=' + userInput + '&append_to_response=releases', {
+      fetch('https://api.themoviedb.org/4/search/movie?api_key=4650b6df4cd0d7388c64bd5a0823a95d&query=' + userInput + '&append_to_response=releases', {
         method: 'GET'
       }).then(function(response){
           return response.json()
