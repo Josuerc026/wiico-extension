@@ -1,0 +1,139 @@
+html,
+body{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    transition: background-image 1.2s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,rgba(92,39,141,0.8), rgba(67,136,162,0.8));
+    z-index: -1;
+
+}
+#center-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: auto;
+}
+.search-field{
+    clear: both;
+    overflow: auto;
+    margin-top: 10px;
+}
+.search-field input[type='text'],
+.search-field button.submit{
+    float: left;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+}
+.search-field input[type='text']{
+    width: 70%;
+    color: #fff;
+    font-style: italic;
+    background: none;
+}
+.search-field input[type='text']::placeholder{
+    color: #fff;
+}
+.search-field button.submit{
+    display: block;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.movie-info{
+    margin-top: 20px;
+    min-height: 175px;
+    background: #fff;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.movie-info:before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    left: 50%;
+    right: 50%;
+    top: -7px;
+    transform: scale(2);
+}
+.movie-content{
+    padding: 15px;
+}
+.movie-content *{
+   margin: 2px auto;
+   font-weight: 300;
+}
+.timer{
+    text-align: center;
+    position: relative;
+    min-height: 80px;
+}
+.movie-error{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.how-long{
+    display: inline-block;
+}
+.num{
+    font-size: 2.5rem;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+}
+.num-label{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+.intro *{
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 300;
+}
+.movie-title{
+    font-style: italic;
+}
+.tmdb-att{
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+    display: block;
+    text-align: center;
+}

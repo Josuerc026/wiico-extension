@@ -1,0 +1,17 @@
+{
+    "name": "WIICO - When is it Coming out?",
+    "short_name": "WIICO",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Search upcoming movies, countdown to international release dates and add it to your google calendar.",
+    "icons": {
+        "144": "images/wiico_144.png"
+    },
+    "browser_action":{
+        "default_icon": "images/wiico_144.png",
+        "default_popup": "index.html"
+    },
+     "permissions": [
+        "activeTab"
+    ]
+}
